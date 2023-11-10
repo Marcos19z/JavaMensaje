@@ -3,6 +3,7 @@ package JavaMensaje;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import javax.swing.JToggleButton;
@@ -50,37 +51,42 @@ public class JavaMensaje {
 		frmEjemploRemoto.getContentPane().add(panel_principal, BorderLayout.CENTER);
 		panel_principal.setLayout(new BorderLayout(0, 0));
 		
-		JButton btnNewButton = new JButton("New button");
+		JButton btnNewButton = new JButton("Boton1");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String mensaje="Boton pulsado.";
-			
+				JOptionPane.showMessageDialog(null, mensaje, "Aviso", JOptionPane.INFORMATION_MESSAGE);
+				System.out.println(mensaje);
 			}
 		});
 		panel_principal.add(btnNewButton, BorderLayout.WEST);
 		
-		JButton btnNewButton_1 = new JButton("New button");
+		JButton btnNewButton_1 = new JButton("Boton2");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String mensaje="Boton pulsado.";
+				JOptionPane.showMessageDialog(null, mensaje, "Aviso", JOptionPane.INFORMATION_MESSAGE);
+				System.out.println(mensaje);
 			}
 		});
 		panel_principal.add(btnNewButton_1, BorderLayout.SOUTH);
 		
-		JButton btnNewButton_2 = new JButton("New button");
+		JButton btnNewButton_2 = new JButton("Boton3");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String mensaje="Boton pulsado.";
+				JOptionPane.showMessageDialog(null, mensaje, "Aviso", JOptionPane.INFORMATION_MESSAGE);
+				System.out.println(mensaje);
 			}
 		});
 		panel_principal.add(btnNewButton_2, BorderLayout.EAST);
 		
-		JButton btnNewButton_3 = new JButton("New button");
+		JButton btnNewButton_3 = new JButton("Boton4");
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			
 				String mensaje="Boton pulsado.";
-			
+				JOptionPane.showMessageDialog(null, mensaje, "Aviso", JOptionPane.INFORMATION_MESSAGE);
+				System.out.println(mensaje);
 			}
 		});
 		panel_principal.add(btnNewButton_3, BorderLayout.CENTER);
